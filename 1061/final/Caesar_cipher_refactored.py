@@ -1,4 +1,5 @@
-def loop_char(num, loop_length, start_char, end_char):
+def loop_char(num, start_char, end_char):
+    loop_length = ord(end_char) - ord(start_char) + 1
     if num < ord(start_char):
         num += loop_length
     elif num > ord(end_char):
@@ -23,15 +24,15 @@ def str2num(text):
     return raw_code
 
 
-def shift_char(raw_code, key):
+def shift_code(raw_code, key):
     encrypted_code = []
     for num in raw_code:
         if ord("a") <= num <= ord("z"):
             num += key
-            num = loop_char(num, 26, "a", "z")
+            num = loop_char(num, "a", "z")
         elif ord("A") <= num <= ord("Z"):
             num += key
-            num = loop_char(num, 26, "A", "Z")
+            num = loop_char(num, "A", "Z")
         else:
             pass
         encrypted_code.append(num)
@@ -48,7 +49,7 @@ def num2str(code):
 
 def ceaser_encrypt(text, key):
     raw_code = str2num(text)
-    encrypted_code = shift_char(raw_code, key)
+    encrypted_code = shift_code(raw_code, key)
     string = num2str(encrypted_code)
     encrypted_text = joint_text(string)
     return encrypted_text
