@@ -1,17 +1,3 @@
-
-
-def shift_char(num, key):
-    if ord("a") <= num <= ord("z"):
-        num += key
-        num = loop_char(num, 26, "a", "z")
-    elif ord("A") <= num <= ord("Z"):
-        num += key
-        num = loop_char(num, 26, "A", "Z")
-    else:
-        pass
-    return num
-
-
 def loop_char(num, loop_length, start_char, end_char):
     if num < ord(start_char):
         num += loop_length
@@ -29,13 +15,27 @@ def joint_text(string):
     return text
 
 
-def str2num(text, key):
-    code = []
+def str2num(text):
+    raw_code = []
     for s in text:
         num = ord(s)
-        new_num = shift_char(num, key)
-        code.append(new_num)
-    return code
+        raw_code.append(num)
+    return raw_code
+
+
+def shift_char(raw_code, key):
+    encrypted_code = []
+    for num in raw_code:
+        if ord("a") <= num <= ord("z"):
+            num += key
+            num = loop_char(num, 26, "a", "z")
+        elif ord("A") <= num <= ord("Z"):
+            num += key
+            num = loop_char(num, 26, "A", "Z")
+        else:
+            pass
+        encrypted_code.append(num)
+    return encrypted_code
 
 
 def num2str(code):
@@ -47,8 +47,9 @@ def num2str(code):
 
 
 def ceaser_encrypt(text, key):
-    code = str2num(text, key)
-    string = num2str(code)
+    raw_code = str2num(text)
+    encrypted_code = shift_char(raw_code, key)
+    string = num2str(encrypted_code)
     encrypted_text = joint_text(string)
     return encrypted_text
 
@@ -62,7 +63,7 @@ def ceaser_decrypt(text, key):
 original_text = "the quick brown fox jumps over the lazy dog"
 print(original_text)
 
-key = 13
+key = 1
 
 translated_text = ceaser_encrypt(original_text, key)
 print(translated_text)
