@@ -16,7 +16,7 @@ def joint_text(string):
     return text
 
 
-def string2code(text):
+def text2code(text):
     raw_code = []
     for s in text:
         num = ord(s)
@@ -48,7 +48,7 @@ def code2string(code):
 
 
 def ceaser_encrypt(text, key):
-    raw_code = string2code(text)
+    raw_code = text2code(text)
     encrypted_code = shift_code_by_key(raw_code, key)
     string = code2string(encrypted_code)
     encrypted_text = joint_text(string)
