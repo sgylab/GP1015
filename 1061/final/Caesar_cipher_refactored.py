@@ -1,3 +1,18 @@
+def joint_text(string):
+    text = ""
+    for c in range(len(string)):
+        text += string[c]
+    return text
+
+
+def code2string(code):
+    string = []
+    for i in range(len(code)):
+        new_char = chr(code[i])
+        string.append(new_char)
+    return string
+
+
 def loop_char(num, start_char, end_char):
     loop_length = ord(end_char) - ord(start_char) + 1
     if num < ord(start_char):
@@ -7,21 +22,6 @@ def loop_char(num, start_char, end_char):
     else:
         pass
     return num
-
-
-def joint_text(string):
-    text = ""
-    for c in range(len(string)):
-        text += string[c]
-    return text
-
-
-def text2code(text):
-    raw_code = []
-    for s in text:
-        num = ord(s)
-        raw_code.append(num)
-    return raw_code
 
 
 def shift_code_by_key(raw_code, key):
@@ -39,12 +39,12 @@ def shift_code_by_key(raw_code, key):
     return encrypted_code
 
 
-def code2string(code):
-    string = []
-    for i in range(len(code)):
-        new_char = chr(code[i])
-        string.append(new_char)
-    return string
+def text2code(text):
+    raw_code = []
+    for s in text:
+        num = ord(s)
+        raw_code.append(num)
+    return raw_code
 
 
 def ceaser_encrypt(text, key):
