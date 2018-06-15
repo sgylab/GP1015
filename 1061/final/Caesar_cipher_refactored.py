@@ -62,12 +62,15 @@ def ceaser_decrypt(text, key):
 
 
 original_text = "the quick brown fox jumps over the lazy dog"
+print("Original text:")
 print(original_text)
 
-key = 1
+key = 13
 
 translated_text = ceaser_encrypt(original_text, key)
+print("Translated text, key = %s:" % key)
 print(translated_text)
 
-decode_text = ceaser_decrypt(translated_text, key)
-print(decode_text)
+decoded_text = ceaser_decrypt(translated_text, key)
+print("Decoded text, key = %s:" % key)
+print(decoded_text)
