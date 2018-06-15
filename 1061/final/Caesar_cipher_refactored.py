@@ -16,7 +16,7 @@ def joint_text(string):
     return text
 
 
-def str2num(text):
+def string2code(text):
     raw_code = []
     for s in text:
         num = ord(s)
@@ -24,22 +24,22 @@ def str2num(text):
     return raw_code
 
 
-def shift_code(raw_code, key):
+def shift_code_by_key(raw_code, key):
     encrypted_code = []
     for num in raw_code:
-        if ord("a") <= num <= ord("z"):
-            num += key
-            num = loop_char(num, "a", "z")
-        elif ord("A") <= num <= ord("Z"):
+        if ord("A") <= num <= ord("Z"):
             num += key
             num = loop_char(num, "A", "Z")
+        elif ord("a") <= num <= ord("z"):
+            num += key
+            num = loop_char(num, "a", "z")
         else:
             pass
         encrypted_code.append(num)
     return encrypted_code
 
 
-def num2str(code):
+def code2string(code):
     string = []
     for i in range(len(code)):
         new_char = chr(code[i])
@@ -48,16 +48,16 @@ def num2str(code):
 
 
 def ceaser_encrypt(text, key):
-    raw_code = str2num(text)
-    encrypted_code = shift_code(raw_code, key)
-    string = num2str(encrypted_code)
+    raw_code = string2code(text)
+    encrypted_code = shift_code_by_key(raw_code, key)
+    string = code2string(encrypted_code)
     encrypted_text = joint_text(string)
     return encrypted_text
 
 
 def ceaser_decrypt(text, key):
-    key *= -1
-    decrypted_text = ceaser_encrypt(text, key)
+    reversed_key = key * -1
+    decrypted_text = ceaser_encrypt(text, reversed_key)
     return decrypted_text
 
 
