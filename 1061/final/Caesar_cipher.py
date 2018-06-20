@@ -22,8 +22,8 @@ def caesar(char, key):
     return new_char
 
 
-key_number = "20180621"
-plaintext = "The quick brown fox jumps over the lazy dog"
+key_number = "20180109"
+plaintext = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
 
 print(plaintext)
 
