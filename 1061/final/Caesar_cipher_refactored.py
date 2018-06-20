@@ -19,8 +19,6 @@ def loop_char(num, start_char, end_char):
         num += loop_length
     elif num > ord(end_char):
         num -= loop_length
-    else:
-        pass
     return num
 
 
@@ -47,7 +45,7 @@ def text2code(text):
     return raw_code
 
 
-def ceaser_encrypt(text, key):
+def caesar_encrypt(text, key):
     raw_code = text2code(text)
     encrypted_code = shift_code_by_key(raw_code, key)
     string = code2string(encrypted_code)
@@ -55,9 +53,9 @@ def ceaser_encrypt(text, key):
     return encrypted_text
 
 
-def ceaser_decrypt(text, key):
+def caesar_decrypt(text, key):
     reversed_key = key * -1
-    decrypted_text = ceaser_encrypt(text, reversed_key)
+    decrypted_text = caesar_encrypt(text, reversed_key)
     return decrypted_text
 
 
@@ -67,10 +65,10 @@ print(original_text)
 
 key = 13
 
-translated_text = ceaser_encrypt(original_text, key)
+translated_text = caesar_encrypt(original_text, key)
 print("Translated text, key = %s:" % key)
 print(translated_text)
 
-decoded_text = ceaser_decrypt(translated_text, key)
+decoded_text = caesar_decrypt(translated_text, key)
 print("Decoded text, key = %s:" % key)
 print(decoded_text)

@@ -9,7 +9,6 @@ def loop_char(num, start_char, end_char):
 
 def caesar(char, key):
     num = ord(char)
-    num += key
     if ord("A") <= num <= ord("Z"):
         num += key
         num = loop_char(num, "A", "Z")
@@ -23,7 +22,7 @@ def caesar(char, key):
     return new_char
 
 
-key_number = "20180109"
+key_number = "20180621"
 plaintext = "The quick brown fox jumps over the lazy dog"
 
 print(plaintext)
