@@ -1,4 +1,4 @@
-# 歡迎來到 GP1015 計概-繪圖與程式應用 的課程首頁
+# GP1015 計概-繪圖與程式應用
 
 [Wordpress 頁面](https://jimmylab.wordpress.com/gp1015/)
 
