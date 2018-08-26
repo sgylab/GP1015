@@ -1,10 +1,10 @@
 # 歡迎來到 GP1015 計概-繪圖與程式應用 的課程首頁
 
-Wordpress 頁面 https://jimmylab.wordpress.com/gp1015/
+[Wordpress 頁面](https://jimmylab.wordpress.com/gp1015/)
 
-課程相關文件放在 Class 內
+課程相關文件放在 [Class] 內
 
-歷屆考題放在 Exam 內
+歷屆考題放在 [Exam] 內
 
 本課程分為四個部分：
 
