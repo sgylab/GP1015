@@ -1,0 +1,1 @@
+echo 0 0 | gmt psxy -R-100/100/-80/120 -JX6.0 -Sc1 -Ba20g10/a20g10 > grid.ps
