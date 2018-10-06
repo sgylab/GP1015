@@ -39,3 +39,4 @@ echo 5.9 22.83 | gmt psxy -R -J -Sa0.7 -W0.01 -G$star_color -O -K >> $out_ps
 
 gmt psxy -R -J -O -T >> $out_ps
 gmt psconvert $out_ps -P -Tf
+gmt psconvert $out_ps -P -Tg
