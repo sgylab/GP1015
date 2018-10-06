@@ -26,9 +26,9 @@
    - 繪製地震波型
    - 繪製統計圖表
    - 繪製 3D 台灣地圖
-3. Matlab
-   - Matlab 介紹
-   - 安裝 Matlab
+3. [Matlab](https://jimmylab.wordpress.com/gp1015/matlab/)
+   - [Matlab 介紹](https://jimmylab.wordpress.com/gp1015/matlab/about-matlab/)
+   - [安裝 Matlab](https://jimmylab.wordpress.com/gp1015/matlab/install-matlab/)
    - Hello, World!
    - 資料型態
    - 流程控制
@@ -36,9 +36,9 @@
    - 繪製地震波型
    - 繪製統計圖表
    - GUI – GUIDE
-4. Python
-   - Python 介紹
-   - 安裝 Python
+4. [Python](https://jimmylab.wordpress.com/gp1015/python/)
+   - [Python 介紹](https://jimmylab.wordpress.com/gp1015/python/about-python/)
+   - [安裝 Python](https://jimmylab.wordpress.com/gp1015/python/install-python/)
    - Hello, World!
    - 資料型態
    - 流程控制
