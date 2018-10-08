@@ -1,12 +1,12 @@
-out_ps=05_wave.ps
-input_file=wave.txt
- 
+out_ps=06_histogram.ps
+input_file=wave.txt 
+
 gmt set PS_MEDIA A4
  
 # start gmt session
 gmt psxy -R0/1/0/1 -JX1c -T -K -P > $out_ps
  
-gmt psxy $input_file -R-5/120/-160000/180000 -Jx0.1/0.00001 -W1 -B20/50000 -Xc -Yc -O -K >> $out_ps
+awk '{print $2,$1}'  $input_file | gmt pshistogram  -R0/100/0/40 -JX9.6/4.8 -BWeSn -Bxa10f20 -Bya10f5 -F -W10 -Ggray -Yc -Xc -Lthinner -Z1  -O -K >> $out_ps
  
 # end gmt session
 gmt psxy -R -J -O -T >> $out_ps
