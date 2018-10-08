@@ -2,11 +2,9 @@
 
 [Wordpress 頁面](https://jimmylab.wordpress.com/gp1015/)
 
-課程文件放在 [Class](Class) 內
-
-舊課程文件放在 [Archived](Archcived) 內
-
-歷屆考題放在 [Exam](Exam) 內
+課程文件 [Class](Class) 
+舊課程文件 [Archived](Archcived) 
+歷屆考題 [Exam](Exam) 
 
 本課程分為四個部分：
 
@@ -20,9 +18,9 @@
    - [GMT 介紹](https://jimmylab.wordpress.com/gp1015/gmt/about-gmt/)
    - [安裝 GMT](https://jimmylab.wordpress.com/gp1015/gmt/install-gmt/)
    - [Hello, World!](https://jimmylab.wordpress.com/gp1015/gmt/gmt-hello-world/)
-   - [GMT 圖層](https://jimmylab.wordpress.com/gp1015/gmt/gmt-layer/)
    - [繪製地圖](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-map/)
-   - 繪製歷史地震
+   - [GMT 圖層](https://jimmylab.wordpress.com/gp1015/gmt/gmt-layer/)
+   - [繪製歷史地震](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-quake/)
    - 繪製地震波型
    - 繪製統計圖表
    - 繪製 3D 台灣地圖
