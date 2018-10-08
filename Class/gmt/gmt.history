@@ -1,12 +1,12 @@
 # GMT 5 Session common arguments shelf
 BEGIN GMT 5.2.1
-B	xa100f20ya1f1
+B	20/50000
 J	x
 Jm	m3
 JX	X1c
-Jx	x0.01/3.25
-R	0/315/21/26
-X	14
-Y	5
-L	22
+Jx	x0.1/0.00001
+R	-5/120/-160000/180000
+X	c
+Y	c
+L	3
 END
