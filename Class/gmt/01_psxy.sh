@@ -1,4 +1,4 @@
-out_ps=01_grid.ps
+out_ps=01_psxy.ps
 
 gmt set PS_MEDIA A4
 
