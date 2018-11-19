@@ -23,13 +23,13 @@
    - [繪製地圖](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-map/)
    - [GMT 圖層](https://jimmylab.wordpress.com/gp1015/gmt/gmt-layer/)
    - [繪製歷史地震](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-quake/)
-   - 繪製地震波型
-   - 繪製統計圖表
+   - [繪製地震波型](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-wave/)
+   - [繪製統計圖表](https://jimmylab.wordpress.com/gp1015/gmt/gmt-plot-diagram/)
    - 繪製 3D 台灣地圖
 3. [Matlab](https://jimmylab.wordpress.com/gp1015/matlab/)
    - [Matlab 介紹](https://jimmylab.wordpress.com/gp1015/matlab/about-matlab/)
    - [安裝 Matlab](https://jimmylab.wordpress.com/gp1015/matlab/install-matlab/)
-   - Hello, World!
+   - [Hello, World!](https://jimmylab.wordpress.com/gp1015/matlab/matlab-hello-world/)
    - 資料型態
    - 流程控制
    - 函式
