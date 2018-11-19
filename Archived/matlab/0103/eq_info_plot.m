@@ -1,6 +1,6 @@
 %% read data table
 
-all;
+clear;
 fid1 = fopen('921_eq_info_simple.txt');
 % data format: code,Int,Dist,Vgal,NSgal,EWgal,Long,Lat
 c = textscan(fid1,'%s %f %f %f %f %f %f %f');
@@ -9,7 +9,7 @@ fclose (fid1);
 
 %% 01. plot Taiwan map
 
-clear all;
+clear;
 load Tai_coast
 
 fid1 = fopen('921_eq_info_simple.txt');
@@ -29,8 +29,8 @@ text(c{7},c{8},num2str(c{2}));
 
 %% 02. plot waveform
 
-clear all;
-fid2 = fopen('./waveform/TCU049.txt');
+clear;
+fid2 = fopen('TCU049.txt');
 wf = textscan(fid2,'%f %f %f %f', 'CommentStyle','#');
 fclose(fid2);
 plot(wf{:,1},wf{:,2},'r');
@@ -85,7 +85,7 @@ end
 
 %% 04. plot distance v.s. PGA
 
-clear all;
+clear;
 fid1 = fopen('921_eq_info_simple.txt');
 % data format: code,Int,Dist,Vgal,NSgal,EWgal,Long,Lat
 c = textscan(fid1,'%s %f %f %f %f %f %f %f');

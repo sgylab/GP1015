@@ -1,5 +1,5 @@
 % Input more numbers~~
-clear all;
+clear;
 
 disp('please input 3 numbers (0-10)');
 b = round(rand(1,3).*10);
@@ -19,6 +19,5 @@ while (sum(b == Number)) ~= 3
     
     for g = 1 : 3
     Number(g) = input(sprintf('Please input the %d number again: ', g));
-    end
-    
+    end   
 end

@@ -1,6 +1,6 @@
 % Input one number
 
-clear all;
+clear;
 
 b = round(rand(1,1).*10);
 num_picked = b;
