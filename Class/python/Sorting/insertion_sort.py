@@ -1,11 +1,12 @@
 def insertion_sort(list, column):
     for i in range(1, len(list)):
-        tmp = list[i]
-        j = i - 1
-        while j >= 0 and tmp[column] < list[j][column]:
-            list[j + 1] = list[j]
-            j = j - 1
-        list[j + 1] = tmp
+        X = list[i]
+        for j in range(i - 1, -1, -1):
+            if list[j][column] > X[column]:
+                list[j + 1] = list[j]
+            else:
+                break
+            list[j] = X
     return list
 
 
@@ -33,14 +34,14 @@ with open("midterm.txt", "r") as file:
         data.append(converted_row)
 
 display_data(data)
-print("")
 
+print("")
 sorted_data = insertion_sort(data, 3)
 display_data(sorted_data)
 
-with open("sorted_midterm.txt", "w") as output:
-    for row in sorted_data:
-        string = ""
-        for item in row:
-            string = string + str(item) + " "
-        output.write(string + "\n")
+# with open("sorted_midterm.txt", "w") as output:
+#     for row in sorted_data:
+#         string = ""
+#         for item in row:
+#             string = string + str(item) + " "
+#         output.write(string + "\n")
