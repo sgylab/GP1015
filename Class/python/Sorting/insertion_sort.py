@@ -39,9 +39,9 @@ print("")
 sorted_data = insertion_sort(data, 3)
 display_data(sorted_data)
 
-# with open("sorted_midterm.txt", "w") as output:
-#     for row in sorted_data:
-#         string = ""
-#         for item in row:
-#             string = string + str(item) + " "
-#         output.write(string + "\n")
+with open("sorted_midterm.txt", "w") as output:
+    for row in sorted_data:
+        string = ""
+        for item in row:
+            string = string + str(item) + " "
+        output.write(string + "\n")
