@@ -36,7 +36,7 @@ with open("midterm.txt", "r") as file:
 display_data(data)
 
 print("")
-sorted_data = insertion_sort(data, 3)
+sorted_data = insertion_sort(data, 0)
 display_data(sorted_data)
 
 with open("sorted_midterm.txt", "w") as output:
