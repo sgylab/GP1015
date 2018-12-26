@@ -16,16 +16,18 @@ class Pet:
 
 
 class Dog(Pet):
+    sound = "bark"
+    food = "bone"
+
     def __init__(self, name):
-        self.sound = "bark"
-        self.food = "bone"
         super().__init__(name, self.sound, self.food)
 
 
 class Cat(Pet):
+    sound = "meow"
+    food = "fish"
+
     def __init__(self, name):
-        self.sound = "meow"
-        self.food = "fish"
         super().__init__(name, self.sound, self.food)
 
 

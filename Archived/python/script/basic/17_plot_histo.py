@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-lines = np.loadtxt('105_midterm.txt')
+lines = np.loadtxt('midterm.txt')
 
 #print (lines[:,0])
 #print (lines[:,1])

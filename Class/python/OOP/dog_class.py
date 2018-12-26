@@ -15,7 +15,7 @@ class Dog:
             print(self.name + ": ......")
 
 
-tom = Dog("Tom")
+doge = Dog("Doge")
 
-tom.eat("bone")
-tom.eat("apple")
+doge.eat("bone")
+doge.eat("apple")
