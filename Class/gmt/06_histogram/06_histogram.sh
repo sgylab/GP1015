@@ -1,5 +1,5 @@
 out_ps=06_histogram.ps
-input_file=wave.txt 
+input_file=midterm.txt 
 
 gmt set PS_MEDIA A4
  
